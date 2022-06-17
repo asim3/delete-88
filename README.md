@@ -17,8 +17,8 @@ Django Template
 
 
 ## Config Vars (env)
-- `DJANGO_SETTINGS_MODULE` = `my_project_name.settings.production`
-- `DJANGO_ALLOWED_HOSTS` = `my_project_name.com,my_project_name.sa`
+- `DJANGO_SETTINGS_MODULE` = `eeeeeeeeeeee.settings.production`
+- `DJANGO_ALLOWED_HOSTS` = `eeeeeeeeeeee.com,eeeeeeeeeeee.sa`
 - `DJANGO_SECRET_KEY` = `********`
 - `REST_SIGNING_KEY` = `********`
 - `EMAIL_HOST_PASSWORD` = `********`

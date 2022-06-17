@@ -5,7 +5,7 @@ services:
   postgres-compose:
     image: postgres
     restart: unless-stopped
-    container_name: my_project_name-db
+    container_name: eeeeeeeeeeee-db
     volumes:
       - ./compose-data/db:/var/lib/postgresql/data
     environment:
@@ -15,13 +15,13 @@ services:
 
   django-compose:
     build: .
-    container_name: my_project_name-app
+    container_name: eeeeeeeeeeee-app
     ports:
       - "8000:8000"
     depends_on:
       - postgres-compose
     environment:
-      - DJANGO_SETTINGS_MODULE=my_project_name.settings.docker_dev
+      - DJANGO_SETTINGS_MODULE=eeeeeeeeeeee.settings.docker_dev
       - DJANGO_SECRET_KEY="top-secret"
       - DJANGO_DEBUG=True
       - DJANGO_ALLOWED_HOSTS=*,127.0.0.1,localhost
