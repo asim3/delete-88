@@ -1,7 +1,7 @@
-from django.urls import reverse
 from django.views.generic.base import TemplateView
 from django.http import FileResponse
 from django.utils import timezone
+from django.urls import reverse
 from rest_framework.permissions import AllowAny
 from rest_framework.generics import RetrieveAPIView
 from captcha.models import CaptchaStore
@@ -32,6 +32,11 @@ class DownloadView(TemplateView):
 
 
 class CaptchaAPIView(RetrieveAPIView):
+    """
+    Generate a new CAPTCHA challenge that humans can pass.
+
+    Valid for 5 minutes. 
+    """
     permission_classes = [AllowAny]
     serializer_class = CaptchaSerializer
 
