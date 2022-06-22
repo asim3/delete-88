@@ -1,4 +1,3 @@
-from django.test import TestCase
 from django.urls import reverse_lazy
 from rest_framework.status import HTTP_200_OK
 
