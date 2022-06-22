@@ -27,13 +27,15 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle',
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '200/day',
-        'user': '3000/hour',
+        'anon': '2000/day',
+        'user': '2000/hour',
     },
 
     # pagination
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 30,
+
+    'NON_FIELD_ERRORS_KEY': 'errors',
 }
 
 
